@@ -1,5 +1,5 @@
 {
-  "name": "expence-tracker-api",
+  "name": "expense-tracker-api",
   "version": "1.0.0",
   "description": "REST API for an Expense Tracker application",
   "license": "ISC",
@@ -7,9 +7,18 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --env-file=.env --watch src/server.js",
+    "start": "node --env-file=.env src/server.js"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "prisma": "^7.10.0"
   }
 }

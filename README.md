@@ -203,4 +203,4 @@ Mobile application: expense-tracker-mobile
 
 ## Author
 
-Upamage
+Upeka Gamage
